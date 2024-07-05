@@ -125,7 +125,7 @@ class Face_Recognition_System:
         cv2.destroyAllWindows()
         messagebox.showinfo("Result","Training datasets completed!!")
 
-#=============Attendance===============
+#=============Attendance===========
     def mark_attendance(self,i,r,n,d):
         with open("Attendance.csv","r+",newline="\n") as f:
             myDataList= f.readlines()
