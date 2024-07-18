@@ -20,7 +20,7 @@ class Face_Recognition_System:
         title_lbl.place(x=25,y=25,width = 1300,height = 90)
 
         #Background image.
-        img2 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\background.jpeg")
+        img2 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\background.jpg")
         img2 = img2.resize((1366,640),Image.Resampling.LANCZOS) 
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
