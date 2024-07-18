@@ -17,7 +17,7 @@ The Face Recognition Student Attendance System is an innovative project develope
      - Excel File
      - SQLite Database
    - **Developer Page**
-   - \*\*Help Desk
+   - Help Desk
 
 ### Technologies Used:
 
