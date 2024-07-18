@@ -24,6 +24,16 @@ class Face_Recognition_System:
         img2 = img2.resize((1366,640),Image.Resampling.LANCZOS) 
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
+        bg_img = Label(self.root,image = self.photoimg2)
+        bg_img.place(x=0,y=138,width = 1366, height = 640)
+
+        #Student button
+        img3 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\student.jpg")
+        img3 = img3.resize((150,150),Image.Resampling.LANCZOS) 
+        self.photoimg3 = ImageTk.PhotoImage(img3)
+        b1 = Button(bg_img,image =self.photoimg3,command=self.student_details,cursor="hand2")
+        b1.place(x=50,y = 100,width=125 , height = 125)
+
 
 
 
