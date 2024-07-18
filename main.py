@@ -65,7 +65,7 @@ class Face_Recognition_System:
         b4 = Button(bg_img,image =self.photoimg6,cursor="hand2",command=self.contact_info)
         b4.place(x=575,y = 100,width=125 , height = 125)
 
-        b4_1 = Button(bg_img,text="Contact",cursor="hand2",command=self.contact_info,font=("times new roman", 12, "bold"),bg="white",fg="red")
+        b4_1 = Button(bg_img,text="Contact",cursor="hand2",command=self.contact_info,font=("times new roman", 12, "bold"),bg="darkblue",fg="white")
         b4_1.place(x=570,y = 230,width=135 , height = 20)
 
         #Train face button
@@ -75,7 +75,7 @@ class Face_Recognition_System:
         b5 = Button(bg_img,image =self.photoimg7,cursor="hand2",command=self.train_classifier)
         b5.place(x=750,y = 100,width=125 , height = 125)
 
-        b5_1 = Button(bg_img,text="Train Face",cursor="hand2",command=self.train_classifier,font=("times new roman", 12, "bold"),bg="white",fg="red")
+        b5_1 = Button(bg_img,text="Train Face",cursor="hand2",command=self.train_classifier,font=("times new roman", 12, "bold"),bg="darkblue",fg="white")
         b5_1.place(x=745,y = 230,width=135 , height = 20)
 
         #Photos button
@@ -85,10 +85,12 @@ class Face_Recognition_System:
         b6 = Button(bg_img,image =self.photoimg8,cursor="hand2",command=self.open_img)
         b6.place(x=925,y = 100,width=125 , height = 125)
 
-        b6_1 = Button(bg_img,text="Photos",cursor="hand2",command=self.open_img,font=("times new roman", 12, "bold"),bg="white",fg="red")
+        b6_1 = Button(bg_img,text="Photos",cursor="hand2",command=self.open_img,font=("times new roman", 12, "bold"),bg="darkblue",fg="white")
         b6_1.place(x=920,y = 230,width=135 , height = 20)
 
-        
+        #Developer button
+        b7_1 = Button(bg_img,text="Developed by : SHWETA GUPTA",command= self.developer_details,cursor="hand2",font=("times new roman", 12, "bold"),bg="darkkblue",fg="white")
+        b7_1.place(x=50,y = 525,width=250 , height = 20)
 
 
 
