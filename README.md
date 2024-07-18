@@ -15,7 +15,7 @@
      - Excel File
      - SQLite Database
    - **Developer Page**
-   - \*\*Help Desk
+   - Help Desk
 
 ### Technologies Used:
 
