@@ -3,7 +3,7 @@ from tkinter import ttk
 from PIL import Image, ImageTk
 from tkinter import messagebox
 import sqlite3
-from cv2 import cv2
+import cv2
 
 class Student:
     def __init__(self,root):
@@ -287,6 +287,7 @@ class Student:
                 messagebox.showinfo("Success","Student Details has been added Successfully", parent = self.root)
             except Exception as es:
                 messagebox.showerror("Error",f"Due to : {str(es)}", parent=self.root)
+
 
     #==========Fetch Data===============
     def fetch_data(self):
