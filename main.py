@@ -1,13 +1,13 @@
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
-from student import Student
+from Student_Details import StudentDetails
 
 
 class Face_Recognition_System:
     def __init__(self,root):
         self.root=root
-        self.root.geometry("1550x768+0+0")
+        self.root.geometry("1550x780+0+0")
         self.root.title("Face Recognition System")
 
         img=Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\black.jpg")
@@ -33,10 +33,10 @@ class Face_Recognition_System:
         img3 = img3.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg3 = ImageTk.PhotoImage(img3)
 
-        b1 = Button(bg_img,image =self.photoimg3,cursor="hand2")
+        b1 = Button(bg_img,image =self.photoimg3,command=self.student_details,cursor="hand2")
         b1.place(x=100,y = 100,width=220 , height = 220)
 
-        b1_1 = Button(bg_img,text="Student Details",cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
+        b1_1 = Button(bg_img,text="Student Details",command=self.student_details,cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
         b1_1.place(x=100,y = 319,width=220 , height = 50)
 
         #Detect face button
@@ -114,10 +114,10 @@ class Face_Recognition_System:
 
 
 
-#     #===============FUNCTIONS BUTTONS=================
-#     def student_details(self):
-#         self.new_window=Toplevel(self.root)
-#         self.app=Student(self.new_window)
+     #===============FUNCTIONS BUTTONS=================
+    def student_details(self):
+        self.new_window=Toplevel(self.root)
+        self.app=StudentDetails(self.new_window)
 
 #     def attendance_data(self):
 #         self.new_window=Toplevel(self.root)
