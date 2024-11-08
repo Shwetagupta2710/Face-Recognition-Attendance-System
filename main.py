@@ -2,6 +2,7 @@ from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
 from Student_Details import StudentDetails
+import os
 
 
 class Face_Recognition_System:
@@ -83,10 +84,10 @@ class Face_Recognition_System:
         img8 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\photos.jpg")
         img8 = img8.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg8 = ImageTk.PhotoImage(img8)
-        b6 = Button(bg_img,image =self.photoimg8,cursor="hand2")
+        b6 = Button(bg_img,image =self.photoimg8,cursor="hand2",command=self.open_img)
         b6.place(x=465,y = 400,width=220 , height = 220)
 
-        b6_1 = Button(bg_img,text="Photos",cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
+        b6_1 = Button(bg_img,text="Photos",cursor="hand2",command=self.open_img,font=("times new roman", 12, "bold"),bg="blue",fg="white")
         b6_1.place(x=465,y = 620,width=220 , height = 50)
 
         #Developer button
@@ -110,7 +111,8 @@ class Face_Recognition_System:
         b8_1.place(x=1195,y = 620,width=220 , height = 50)
 
 
-        
+    def open_img(self):
+        os.startfile("data") 
 
 
 
