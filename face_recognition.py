@@ -20,12 +20,6 @@ class Face_Recognition:
         title_lbl = Label(self.root, text="FACE RECOGNITION",
                           font=("times new roman", 35, "bold"), bg="white", fg="green")
         title_lbl.place(x=0, y=0, width=full_screen_width, height=38)
-
-        back_btn = Button(title_lbl, text="Back",width=21,
-            font=("times new roman", 10, "bold"),
-            bg="Red",
-            fg="white",)
-        back_btn.place(x=30,y=5)
         
         #1st image
         img_top = Image.open("images/face.jpeg")
@@ -43,7 +37,7 @@ class Face_Recognition:
         bottom_lbl = Label(self.root, image=self.photoimage_bottom)
         bottom_lbl.place(x=750, y=55, width=950, height=800)
 
-        but1 = Button(bottom_lbl, text="FACE RECOGNITION", cursor="hand2", font=("times new roman", 14, "bold"), bg="darkgreen",
+        but1 = Button(bottom_lbl, text="FACE RECOGNITION", cursor="hand2", command=self.face_recog, font=("times new roman", 14, "bold"), bg="darkgreen",
                       fg="white")
         but1.place(x=365, y=620, width=220, height=40)
 
