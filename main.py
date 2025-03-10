@@ -2,6 +2,8 @@ from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
 from Student_Details import StudentDetails
+from train import Train
+from face_recognition import Face_Recognition
 import os
 
 
@@ -44,10 +46,10 @@ class Face_Recognition_System:
         img4 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\facedetect.png")
         img4 = img4.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg4 = ImageTk.PhotoImage(img4)
-        b2 = Button(bg_img,image =self.photoimg4,cursor="hand2")
+        b2 = Button(bg_img,image =self.photoimg4,cursor="hand2", command=self.face_data)
         b2.place(x=465,y = 100,width=220 , height = 220)
 
-        b2_1 = Button(bg_img,text="Face Detector",cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
+        b2_1 = Button(bg_img,text="Face Detector",cursor="hand2",command=self.face_data,font=("times new roman", 12, "bold"),bg="blue",fg="white")
         b2_1.place(x=465,y = 319,width=220 , height = 50)
 
         #Attendance button
@@ -74,10 +76,10 @@ class Face_Recognition_System:
         img7 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\traindata.png")
         img7 = img7.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg7 = ImageTk.PhotoImage(img7)
-        b5 = Button(bg_img,image =self.photoimg7,cursor="hand2")
+        b5 = Button(bg_img,image =self.photoimg7,cursor="hand2", command=self.train_data)
         b5.place(x=100,y = 400,width=220 , height = 220)
 
-        b5_1 = Button(bg_img,text="Train Face",cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
+        b5_1 = Button(bg_img,text="Train Face",cursor="hand2",command=self.train_data,font=("times new roman", 12, "bold"),bg="blue",fg="white")
         b5_1.place(x=100,y = 620,width=220 , height = 50)
 
         #Photos button
@@ -120,6 +122,14 @@ class Face_Recognition_System:
     def student_details(self):
         self.new_window=Toplevel(self.root)
         self.app=StudentDetails(self.new_window)
+
+    def train_data(self):
+        self.new_window=Toplevel(self.root)
+        self.app=Train(self.new_window)
+
+    def face_data(self):
+        self.new_window=Toplevel(self.root)
+        self.app=Face_Recognition(self.new_window)
 
 #     def attendance_data(self):
 #         self.new_window=Toplevel(self.root)
