@@ -14,8 +14,12 @@ import cv2
 class StudentDetails:
     def __init__(self, root):
         self.root = root
-        self.root.geometry("1366x768+0+0")
+        self.root.geometry("{width}x{height}+0+0".format(width=self.root.winfo_screenwidth(), height=self.root.winfo_screenheight()))
         self.root.title("Student Management System")
+
+        full_screen_width = self.root.winfo_screenwidth()
+        desired_width = full_screen_width // 3
+        lower_img_height=self.root.winfo_screenheight()-298
 
 
         # -----Declaring text variable to fill data from database-------

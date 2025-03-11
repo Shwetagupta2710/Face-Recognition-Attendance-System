@@ -4,6 +4,7 @@ from PIL import Image,ImageTk
 from Student_Details import StudentDetails
 from train import Train
 from face_recognition import Face_Recognition
+from attendance import Attendance
 import os
 
 
@@ -56,10 +57,10 @@ class Face_Recognition_System:
         img5 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\attendance.png")
         img5 = img5.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg5 = ImageTk.PhotoImage(img5)
-        b3 = Button(bg_img,image =self.photoimg5,cursor="hand2")
+        b3 = Button(bg_img,image =self.photoimg5,cursor="hand2", command=self.attendance_data)
         b3.place(x=830,y = 100,width=220 , height = 220)
 
-        b3_1 = Button(bg_img,text="Attendance",cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
+        b3_1 = Button(bg_img,text="Attendance",cursor="hand2",command=self.attendance_data,font=("times new roman", 12, "bold"),bg="blue",fg="white")
         b3_1.place(x=830,y = 319,width=220 , height = 50)
 
         #Help desk button
@@ -130,10 +131,10 @@ class Face_Recognition_System:
     def face_data(self):
         self.new_window=Toplevel(self.root)
         self.app=Face_Recognition(self.new_window)
-
-#     def attendance_data(self):
-#         self.new_window=Toplevel(self.root)
-#         self.app=Attendance(self.new_window)
+    
+    def attendance_data(self):
+        self.new_window=Toplevel(self.root)
+        self.app=Attendance(self.new_window)
 
 #     def developer_details(self):
 #         self.new_window=Toplevel(self.root)
