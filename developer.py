@@ -44,7 +44,7 @@ class Developer:
         self.photoimage_top = ImageTk.PhotoImage(img_top)
 
         top_lbl = Label(self.root, image=self.photoimage_top)
-        top_lbl.place(x=0, y=55, width=1530, height=730)
+        top_lbl.place(x=0, y=55, width=1530, height=720)
 
 
 
