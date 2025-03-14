@@ -5,6 +5,7 @@ from Student_Details import StudentDetails
 from train import Train
 from face_recognition import Face_Recognition
 from attendance import Attendance
+from developer import Developer
 import os
 
 
@@ -97,10 +98,10 @@ class Face_Recognition_System:
         img9 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\photos.jpg")
         img9 = img9.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg9 = ImageTk.PhotoImage(img9)
-        b7 = Button(bg_img,image =self.photoimg9,cursor="hand2")
+        b7 = Button(bg_img,image =self.photoimg9,cursor="hand2", command=self.developer_details)
         b7.place(x=830,y = 400,width=220 , height = 220)
 
-        b7_1 = Button(bg_img,text="Developer",cursor="hand2",font=("times new roman", 12, "bold"),bg="blue",fg="white")
+        b7_1 = Button(bg_img,text="Developer",cursor="hand2", command=self.developer_details,font=("times new roman", 12, "bold"),bg="blue",fg="white")
         b7_1.place(x=830,y = 620,width=220 , height = 50)
 
         #Exit button
@@ -136,9 +137,9 @@ class Face_Recognition_System:
         self.new_window=Toplevel(self.root)
         self.app=Attendance(self.new_window)
 
-#     def developer_details(self):
-#         self.new_window=Toplevel(self.root)
-#         self.app=Developer(self.new_window)
+    def developer_details(self):
+        self.new_window=Toplevel(self.root)
+        self.app=Developer(self.new_window)
 
 
 
