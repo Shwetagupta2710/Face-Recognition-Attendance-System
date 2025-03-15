@@ -21,6 +21,18 @@ The **Face Recognition Attendance System** is a robust and efficient application
 🔹 **Haar Cascade Algorithm** – Ensures accurate face detection.
 
 ---
+## 📷 Screenshots
+🖼️ **Main Dashboard:**
+![Main Dashboard](screenshots/main.png)
+
+🖼️ **Student Details:**
+![Student Details](screenshots/studentd.png)
+
+🖼️ **Attendance Data:**
+![Attendance Data](screenshots/attendancee.png)
+
+
+---
 
 ## 🛠️ Technologies Used
 - **Python** (Tkinter, OpenCV)
@@ -39,18 +51,6 @@ The **Face Recognition Attendance System** is a robust and efficient application
 
 ---
 
-## 📷 Screenshots
-🖼️ **Main Dashboard:**
-![Main Dashboard](screenshots/main.png)
-
-🖼️ **Student Details:**
-![Student Details](screenshots/studentd.png)
-
-🖼️ **Attendance Data:**
-![Attendance Data](screenshots/attendancee.png)
-
-
----
 
 ## 🚀 Installation Guide
 ### Prerequisites:
