@@ -12,7 +12,6 @@ from developer import Developer
 from help import Help
 import os
 
-
 class Face_Recognition_System:
     def __init__(self,root):
         self.root=root
@@ -30,7 +29,7 @@ class Face_Recognition_System:
         title_lbl.place(x=100,y=25,width = 1300,height = 90)
 
         #Background image.
-        img2 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\background.jpg")
+        img2 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\back.jpg")
         img2 = img2.resize((1550,768),Image.Resampling.LANCZOS) 
         self.photoimg2 = ImageTk.PhotoImage(img2)
 
@@ -49,7 +48,7 @@ class Face_Recognition_System:
 
 
         #Student button
-        img3 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\student.jpg")
+        img3 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\stu.jpg")
         img3 = img3.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg3 = ImageTk.PhotoImage(img3)
 
@@ -70,7 +69,7 @@ class Face_Recognition_System:
         b2_1.place(x=465,y = 319,width=220 , height = 50)
 
         #Attendance button
-        img5 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\attendance.png")
+        img5 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\attend.png")
         img5 = img5.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg5 = ImageTk.PhotoImage(img5)
         b3 = Button(bg_img,image =self.photoimg5,cursor="hand2", command=self.attendance_data)
@@ -97,7 +96,7 @@ class Face_Recognition_System:
         b5.place(x=100,y = 400,width=220 , height = 220)
 
         b5_1 = Button(bg_img,text="Train Face",cursor="hand2",command=self.train_data,font=("times new roman", 12, "bold"),bg="blue",fg="white")
-        b5_1.place(x=100,y = 620,width=220 , height = 50)
+        b5_1.place(x=100,y = 610,width=220 , height = 50)
 
         #Photos button
         img8 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\photos.jpg")
@@ -107,27 +106,27 @@ class Face_Recognition_System:
         b6.place(x=465,y = 400,width=220 , height = 220)
 
         b6_1 = Button(bg_img,text="Photos",cursor="hand2",command=self.open_img,font=("times new roman", 12, "bold"),bg="blue",fg="white")
-        b6_1.place(x=465,y = 620,width=220 , height = 50)
+        b6_1.place(x=465,y = 610,width=220 , height = 50)
 
         #Developer button
-        img9 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\photos.jpg")
+        img9 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\developer.jpg")
         img9 = img9.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg9 = ImageTk.PhotoImage(img9)
         b7 = Button(bg_img,image =self.photoimg9,cursor="hand2", command=self.developer_details)
         b7.place(x=830,y = 400,width=220 , height = 220)
 
         b7_1 = Button(bg_img,text="Developer",cursor="hand2", command=self.developer_details,font=("times new roman", 12, "bold"),bg="blue",fg="white")
-        b7_1.place(x=830,y = 620,width=220 , height = 50)
+        b7_1.place(x=830,y = 610,width=220 , height = 50)
 
         #Exit button
-        img10 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\photos.jpg")
+        img10 = Image.open(r"C:\Users\shwet\OneDrive\Desktop\Face-Recognition-Attendance-System\Images\exit.jpg")
         img10 = img10.resize((220,220),Image.Resampling.LANCZOS) 
         self.photoimg10 = ImageTk.PhotoImage(img10)
         b8 = Button(bg_img,image =self.photoimg10,cursor="hand2",command=self.iExit )
         b8.place(x=1195,y = 400,width=220 , height = 220)
 
         b8_1 = Button(bg_img,text="Exit",cursor="hand2",command=self.iExit ,font=("times new roman", 12, "bold"),bg="blue",fg="white")
-        b8_1.place(x=1195,y = 620,width=220 , height = 50)
+        b8_1.place(x=1195,y = 610,width=220 , height = 50)
 
 
     def open_img(self):
