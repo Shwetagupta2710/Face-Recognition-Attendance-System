@@ -56,7 +56,7 @@ The **Face Recognition Attendance System** is a robust and efficient application
 ### Prerequisites:
 ✔ Python 3.x installed
 ✔ MySQL installed and configured
-✔ Required Python Libraries: OpenCV, Tkinter, Pandas, NumPy, MySQL-connector
+✔ Required Python Libraries: OpenCV, Tkinter, MySQL-connector
 
 ### Steps to Run:
 1. Clone this repository:
@@ -69,7 +69,7 @@ The **Face Recognition Attendance System** is a robust and efficient application
    ```
 3. Install dependencies:
    ```bash
-   pip install opencv-python pandas numpy mysql-connector-python
+   pip install opencv-python mysql-connector-python
    ```
 4. Run the application:
    ```bash
