@@ -3,6 +3,7 @@
 ## 🎯 Overview
 The **Face Recognition Attendance System** is a robust and efficient application built using **Python, OpenCV, Tkinter, and MySQL** that automates attendance tracking with facial recognition. Leveraging the **Haar Cascade algorithm**, it detects faces and marks attendance seamlessly. The system offers multiple functionalities, including:
 
+
 ✅ **Student Dashboard** – Manage student details
 ✅ **Attendance** – Track and store attendance records
 ✅ **Developer Contact** – Get in touch with the creator
