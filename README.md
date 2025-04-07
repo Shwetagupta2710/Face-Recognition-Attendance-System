@@ -11,6 +11,7 @@ The **Face Recognition Attendance System** is a robust and efficient application
 ✅ **Train Data** – Train the model with new face data
 ✅ **Photos** – Store and retrieve captured face images
 
+
 ---
 
 ## 📌 Features
