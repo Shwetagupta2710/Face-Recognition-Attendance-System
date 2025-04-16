@@ -3,12 +3,14 @@
 ## 🎯 Overview
 The **Face Recognition Attendance System** is a robust and efficient application built using **Python, OpenCV, Tkinter, and MySQL** that automates attendance tracking with facial recognition. Leveraging the **Haar Cascade algorithm**, it detects faces and marks attendance seamlessly. The system offers multiple functionalities, including:
 
+
 ✅ **Student Dashboard** – Manage student details
 ✅ **Attendance** – Track and store attendance records
 ✅ **Developer Contact** – Get in touch with the creator
 ✅ **Exit** – Secure logout and exit
 ✅ **Train Data** – Train the model with new face data
 ✅ **Photos** – Store and retrieve captured face images
+
 
 ---
 
@@ -19,6 +21,18 @@ The **Face Recognition Attendance System** is a robust and efficient application
 🔹 **Export Data** – Convert attendance records to CSV and Excel.
 🔹 **Photo Storage** – Captures and stores images for training.
 🔹 **Haar Cascade Algorithm** – Ensures accurate face detection.
+
+---
+## 📷 Screenshots
+🖼️ **Main Dashboard:**
+![Main Dashboard](screenshots/main.png)
+
+🖼️ **Student Details:**
+![Student Details](screenshots/studentd.png)
+
+🖼️ **Attendance Data:**
+![Attendance Data](screenshots/attendancee.png)
+
 
 ---
 
@@ -39,24 +53,12 @@ The **Face Recognition Attendance System** is a robust and efficient application
 
 ---
 
-## 📷 Screenshots
-🖼️ **Main Dashboard:**
-![Main Dashboard](screenshots/main.png)
-
-🖼️ **Student Details:**
-![Student Details](screenshots/studentd.png)
-
-🖼️ **Attendance Data:**
-![Attendance Data](screenshots/attendancee.png)
-
-
----
 
 ## 🚀 Installation Guide
 ### Prerequisites:
 ✔ Python 3.x installed
 ✔ MySQL installed and configured
-✔ Required Python Libraries: OpenCV, Tkinter, Pandas, NumPy, MySQL-connector
+✔ Required Python Libraries: OpenCV, Tkinter, MySQL-connector
 
 ### Steps to Run:
 1. Clone this repository:
@@ -69,7 +71,7 @@ The **Face Recognition Attendance System** is a robust and efficient application
    ```
 3. Install dependencies:
    ```bash
-   pip install opencv-python pandas numpy mysql-connector-python
+   pip install opencv-python mysql-connector-python
    ```
 4. Run the application:
    ```bash
